@@ -1,0 +1,74 @@
+/* Agrega estos estilos en tu hoja de estilo CSS o en el archivo de estilos de tu componente */
+
+/* Agrega estos estilos en tu hoja de estilo CSS o en el archivo de estilos de tu componente */
+
+.add-course-button {
+  position: fixed;
+  top: 9px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+
+  left: 400px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #004266; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-course-button:hover {
+  background-color: #002641; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+.course-card {
+  max-width: 400px; /* Ajusta el ancho máximo del card según tus necesidades */
+  margin: 16px; /* Ajusta el margen entre los cards según tus necesidades */
+}
+
+.course-image {
+  width: 100%; /* La imagen ocupa todo el ancho del card */
+  max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
+  object-fit: cover; /* Ajusta la forma en que la imagen se adapta al contenedor */
+}
+
+mat-card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+mat-card-content {
+  margin-top: 8px;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-card {
+  width: 40%; /* Ajusta el ancho de cada tarjeta según tus necesidades */
+  margin-bottom: 16px;
+  box-sizing: border-box; /* Asegura que el margen no afecte el ancho real */
+}
+
+
+
+section {
+  max-width: 2000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #808080;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Deshabilita el desbordamiento horizontal */
+  font-family: 'Arial', sans-serif; /* Cambia la fuente predeterminada si es necesario */
+  /* Otros estilos que desees deshabilitar o cambiar */
+}

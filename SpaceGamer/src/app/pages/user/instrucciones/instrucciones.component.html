@@ -1,0 +1,46 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <mat-card class="mt-5 p-4">
+          <mat-card-header class="bg-primary text-white">
+            <mat-card-title>
+              Lea las instrucciones de esta página cuidadosamente
+            </mat-card-title>
+          </mat-card-header>
+          <br>
+          <mat-card-subtitle>Un paso más para ir</mat-card-subtitle>
+          <br>
+          <mat-card-content class="ml-3">
+            <h1 class="mb-4">{{ examen.titulo }}</h1>
+            <p class="mb-3">{{ examen.descripcion }}</p>
+            <mat-divider class="mb-4"></mat-divider>
+           
+            <h1 class="mb-3">Instrucciones importantes</h1>
+
+            <ul class="mb-4">
+              <li>Este cuestionario es sobre los cursos desarrollados</li>
+              <li>Tienes que enviar el cuestionario en <b>{{ examen.numeroDePreguntas * 2 }} minutos</b></li>
+              <li>Recuerda que hay <b>{{ examen.puntosMaximos/examen.numeroDePreguntas }} puntos por pregunta</b></li>
+            </ul>
+            <mat-divider class="mb-4"></mat-divider>
+            <br>
+            <h1 class="mb-3">Procedimiento de la prueba</h1>
+            <ul class="mb-4">
+              <li>Presiona el botón <b>Comenzar prueba</b> para iniciar el examen</li>
+              <li>El tiempo comenzará cuando hagas clic en el botón de inicio</li>
+              <li>No puedes reanudar este cuestionario si se interrumpe por algún motivo</li>
+              <li>Desplázate hacia abajo para pasar a la siguiente pregunta</li>
+              <li>Haz clic en el botón "Enviar Cuestionario" al finalizar</li>
+            </ul>
+          </mat-card-content>
+          <mat-card-actions class="text-center">
+            <button (click)="empezarExamen()" mat-raised-button color="primary">
+              Comenzar prueba
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

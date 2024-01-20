@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Estudiantil</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+  <!-- Carrusel dentro de la sección antes de los cards -->
+  <div id="carouselInSection" class="carousel slide mb-4" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://www.conectaindustria.es/asset/thumbnail,1920,1080,center,center/media/conectaindustria/images/2020/10/30/1604045805131mama-quiero-ser-hacker-modesto-alvarez-ciberseguridad-seresco.jpeg" class="d-block w-100 carousel-img" alt="Imagen 1">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="https://www.fundaciontelefonica.com/wp-content/uploads/2021/08/programacion-42-portada-noticia-2560x950-1-1600x593.jpg" class="d-block w-100 carousel-img" alt="Imagen 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.blogs.es/a2066e/programando/1366_2000.jpg" class="d-block w-100 carousel-img" alt="Imagen 2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cronicasfreelancer.com/wp-content/uploads/2019/03/programador.jpg" class="d-block w-100 carousel-img" alt="Imagen 2">
+  </div>
+  
+
+        <!-- Agrega más elementos carousel-item según sea necesario -->
+    </div>
+    <button [routerLink]="'/login'" class="btn btn-outline-primary custom-btn carousel-btn">INGRESAR
+      
+    </button>
+    <a class="carousel-control-prev" href="#carouselInSection" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselInSection" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

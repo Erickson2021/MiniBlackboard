@@ -1,0 +1,74 @@
+.example-header-image{
+  background-image: url('../../../../assets/test.png');
+  background-size: cover;
+}
+section {
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px #7a7878;
+  margin-left: 5%;
+}
+/* Estilos para las tarjetas de examen */
+/* Estilos para las tarjetas de examen */
+/* Estilos para las tarjetas de examen */
+.mat-card {
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Clase específica para agregar espacio entre tarjetas */
+.card-spacing {
+  margin-top: 20px;
+}
+
+
+/* ... (resto de tus estilos) */
+
+
+/* ... (resto de tus estilos) */
+
+/* Estilos para el encabezado de la tarjeta */
+mat-card-header {
+  background-color: #004266;
+  color: #fff;
+}
+
+/* Estilos para el título de la tarjeta */
+mat-card-title {
+  font-size: 18px;
+}
+
+/* Estilos para el subtítulo de la tarjeta */
+mat-card-subtitle {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Estilos para el contenido de la tarjeta */
+mat-card-content {
+  padding: 16px;
+}
+
+/* Estilos para los botones en las acciones de la tarjeta */
+mat-card-actions button {
+  margin-right: 10px;
+}
+
+/* Estilo para el botón de eliminar */
+mat-card-actions button.mat-flat-button.color-warn {
+  color: #fff;
+}
+
+/* Hover para botones */
+mat-card-actions button:hover {
+  background-color: #00314c;
+  color: #fff;
+}
+
+/* Fondo de la tarjeta al hacer hover */
+mat-card:hover {
+  background-color: #f0f0f0;
+}

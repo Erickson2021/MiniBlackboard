@@ -1,0 +1,15 @@
+<section>
+  <div class="course-container">
+    <div *ngFor="let c of categorias" class="course-card">
+      <mat-card>
+        <img mat-card-image [src]="c.imagen" alt="Imagen del curso" class="course-image">
+        <mat-card-header>
+          <mat-card-title>{{ c.titulo }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ c.descripcion }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</section>

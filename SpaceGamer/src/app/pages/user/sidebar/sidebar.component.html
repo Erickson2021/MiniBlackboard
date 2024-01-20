@@ -1,0 +1,20 @@
+<div class="sidebar">
+  <div class="header">Cursos</div>
+
+  <button *ngIf="isLoggedIn && user" class="user-button" aria-label="Usuario" >
+    <mat-icon>account_circle</mat-icon>
+    <span>{{ user.nombre }} {{ user.apellido }}</span>
+  </button>
+  
+  <button routerLink="/user-dashboard/0" class="sidebar-item">
+      <mat-icon class="sidebar-icon">quiz</mat-icon> MiniCuestionarios
+  </button>
+  <button [routerLink]="'/user-dashboard/'+c.categoriaId" class="sidebar-item" *ngFor="let c of categorias">
+      <mat-icon class="sidebar-icon">list</mat-icon> {{ c.titulo }}
+  </button>
+  <div class="menu-footer">
+      <button class="sidebar-item" (click)="logout()">
+          <mat-icon class="sidebar-icon">logout</mat-icon> Salir
+      </button>
+  </div>
+</div>

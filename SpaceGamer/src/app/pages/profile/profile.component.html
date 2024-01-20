@@ -1,0 +1,48 @@
+
+<section >
+  <img src="https://img.freepik.com/foto-gratis/hermosa-imagen-generada-ia-fondo-borroso_587448-1373.jpg?w=996&t=st=1700565695~exp=1700566295~hmac=925f65a80147424cd34749bb40951fbadaf6edbc979d0eda451680d4a84948e4" alt="Imagen del perfil" class="profile-banner">
+  <mat-card style="margin-top: -50px;">
+
+    <mat-card-content class="col-md-12">
+        <div class = "bootstrap-wrapper">
+            <div class = "container">
+                <div class = "text-center">
+                    <img
+                    src="https://learn.content.blackboardcdn.com/3900.78.0-rel.20+a950d0d/images/ci/ng/default_profile_avatar.svg?ts=1700607554055"
+                    alt=""
+                    class = "profile-image">
+
+                    <h1 class="mt20">{{ user.nombre }} {{ user.apellido }}</h1>
+                </div>
+                <div class = "row">
+                  <div class = "col-md-10 offset-md-1">
+                    <table class = "table text-center">
+                      <tr>
+                        <td>Nombre de usuario</td>
+                        <td>{{ user.username }}</td>
+                      </tr>
+                      <tr>
+                        <td>ID</td>
+                        <td>{{ user.id }}</td>
+                      </tr>
+                      <tr>
+                        <td>Teléfono</td>
+                        <td>{{ user.telefono }}</td>
+                      </tr>
+                      <tr>
+                        <td>Rol</td>
+                        <td>{{ user.authorities[0].authority }}</td>
+                      </tr>
+                      <tr>
+                        <td>Estado</td>
+                        <td>{{ user.enabled ? "Activo" : "No activo"}}</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+          </mat-card-content>
+        </mat-card>
+      </section>

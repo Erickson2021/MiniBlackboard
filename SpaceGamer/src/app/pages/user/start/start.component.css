@@ -1,0 +1,102 @@
+/* Agrega estos estilos a tu archivo CSS */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bootstrap-wrapper {
+    background: url('https://www.nextibs.com/wp-content/uploads/2021/12/seguridad-informatica-1024x439.jpeg.webp') center center fixed;
+    background-size: cover;
+    color: #000000; /* Cambiando el color del texto a negro */
+    padding: 50px 0;
+    height: 100vh; /* Haciendo que ocupe el 100% de la altura de la pantalla */
+  }
+  
+  .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    color: #000000; /* Cambiando el color del texto a negro */
+  }
+  
+  
+  .mat-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .mat-card-content {
+    padding: 20px;
+  }
+  
+  .mat-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mat-divider {
+    border-top: 1px solid #333333;
+  }
+  
+  .row mt20 {
+    margin-top: 20px;
+  }
+  
+  .mat-card-title,
+  .mat-card-subtitle,
+  .mat-card-content p {
+    color: #333333;
+  }
+  
+  .mat-card-avatar {
+    background-image: url('/assets/exam.png');
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .mat-card-header {
+    align-items: center;
+  }
+  
+  .mat-card-actions {
+    margin-top: 10px;
+  }
+  
+  .col-md-12 h1 {
+    color: #000000; /* Cambiando el color del texto a negro */
+  }
+  
+  .mat-spinner {
+    margin: auto;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button.mat-raised-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.mat-raised-button:hover {
+    background-color: #0056b3;
+  }
+  

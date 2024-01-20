@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar Preguntas - {{ titulo }}</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #004266;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    mat-card {
+      background-color: #fff;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    mat-card-header {
+      background-color: lightskyblue;
+      color: #fff;
+      padding: 20px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    mat-card-subtitle {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    mat-card-content {
+      padding: 30px;
+    }
+
+    mat-form-field {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    textarea, input {
+      width: calc(100% - 24px);
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 18px;
+    }
+
+    .row {
+      margin-bottom: 30px;
+    }
+
+    .container text-center {
+      text-align: center;
+    }
+
+    button {
+      font-size: 22px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    button[color="primary"] {
+      background-color: #004266;
+      border-color: #004266;
+      color: #fff;
+    }
+
+    button[color="primary"]:hover {
+      background-color: #004266;
+      border-color: #004266;
+    }
+  </style>
+</head>
+<body>
+  <div class="bootstrap-wrapper">
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h1>Agregar tus Preguntas Favoritas a <span style="font-weight: bold;">{{ titulo }}</span></h1>
+        <mat-card>
+            <mat-card-header>
+                <mat-card-subtitle>
+                    Ingresa los Detalles de tu Nueva Pregunta
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <form class="mt-4" (submit)="formSubmit()">
+                    <mat-form-field>
+                        <mat-label>Escribe el Contenido de tu Pregunta</mat-label>
+                        <textarea rows="8" matInput placeholder="Comienza a Escribir" name="contenido" [(ngModel)]="pregunta.contenido"></textarea>
+                    </mat-form-field>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                          <mat-form-field>
+                            <mat-label>Ingresa la Opción 1</mat-label>
+                            <input type="text" matInput name="opcion1" [(ngModel)]="pregunta.opcion1">
+                          </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                          <mat-form-field>
+                            <mat-label>Ingresa la Opción 2</mat-label>
+                            <input type="text" matInput name="opcion2" [(ngModel)]="pregunta.opcion2">
+                          </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                          <mat-form-field>
+                            <mat-label>Ingresa la Opción 3</mat-label>
+                            <input type="text" matInput name="opcion3" [(ngModel)]="pregunta.opcion3">
+                          </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                          <mat-form-field>
+                            <mat-label>Ingresa la Opción 4</mat-label>
+                            <input type="text" matInput name="opcion4" [(ngModel)]="pregunta.opcion4">
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    
+                      <mat-form-field>
+                        <mat-label>Selecciona la Respuesta Correcta</mat-label>
+                        <mat-select [(ngModel)]="pregunta.respuesta" name="respuesta">
+                          <mat-option *ngIf="pregunta.opcion1" [value]="pregunta.opcion1">{{ pregunta.opcion1 }}</mat-option>
+                          <mat-option *ngIf="pregunta.opcion2" [value]="pregunta.opcion2">{{ pregunta.opcion2 }}</mat-option>
+                          <mat-option *ngIf="pregunta.opcion3" [value]="pregunta.opcion3">{{ pregunta.opcion3 }}</mat-option>
+                          <mat-option *ngIf="pregunta.opcion4" [value]="pregunta.opcion4">{{ pregunta.opcion4 }}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+
+                      <div class="container text-center">
+                        <button mat-raised-button color="primary">Guardar Pregunta</button>
+                      </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

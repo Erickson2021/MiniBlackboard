@@ -1,0 +1,40 @@
+/* Agrega estos estilos en tu hoja de estilo CSS o en el archivo de estilos de tu componente */
+
+mat-toolbar {
+    background-color: #004266; /* Color de fondo de la barra de navegación */
+    color: white; /* Color del texto en la barra de navegación */
+  }
+  
+  .example-icon {
+    color: white; /* Color de los iconos en la barra de navegación */
+  }
+  
+  .favorite-icon {
+    margin-right: 10px;
+  }
+  
+  /* Ajusta el margen de los elementos según tus necesidades */
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* Estilos para el botón de Cerrar sesión */
+  .logout-button {
+    margin-right: 180px;
+  }
+  
+  /* Añade estilos para el botón con el nombre de usuario */
+  .user-button {
+    margin-right: 10px;
+  }
+  
+  /* Estilos para los enlaces de Iniciar sesión y Crear cuenta */
+  a.example-icon.favorite-icon {
+    margin-right: 20px;
+  }
+  
+  a.example-icon.favorite-icon.mr20.ml70 {
+    margin-left: 70px;
+    margin-right: 20px;
+  }
+  

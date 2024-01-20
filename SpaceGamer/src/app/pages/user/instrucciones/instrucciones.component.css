@@ -1,0 +1,76 @@
+/* Estilos generales */
+.body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Estilos para el contenedor principal */
+.bootstrap-wrapper {
+  padding: 20px;
+}
+
+/* Estilos para el título principal */
+h1 {
+  font-size: 36px;
+  color: #004266;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el subtítulo */
+mat-card-subtitle {
+  font-size: 20px;
+  color: #555;
+}
+
+/* Estilos para el contenido del mat-card */
+.mat-card-content {
+  margin-left: 30px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Estilos para los títulos de sección */
+.mat-card-content h1 {
+  color: #004266;
+}
+
+/* Estilos para las listas de instrucciones */
+.mat-card-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mat-card-content li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Estilos para el botón de acción */
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button[mat-raised-button] {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+button[mat-raised-button]:hover {
+  background-color: #00314c;
+}
+
+/* Estilos para la separación entre las secciones */
+mat-divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #e0e0e0;
+}
